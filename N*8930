@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std; // 8930
+
+int main()
+{
+    int n, div = 2;
+    cout << "n= ";
+    cin >> n;
+    while (n > 1 && n < 2147483648) {
+        while (n % div == 0) {
+            cout << "\n" << div;
+            n = n / div;
+        }
+        div++;
+    }
+
+    return 0;
+}
